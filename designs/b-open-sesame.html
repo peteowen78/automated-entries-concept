@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Platinum Automated Entries: B, Open Sesame (direction) (concept)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>
+:root{--green:#64AD33;--leaf:#4F9424;--ink:#16300B;--sky:#CFE9FF;--sun:#FFD23F;--paper:#F7FBF2;--timber:#B97A3C;--timber2:#9C6230;--brick:#A8513A}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 "Bricolage Grotesque",system-ui,sans-serif;font-variation-settings:"opsz" 14}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;font-weight:800;line-height:.98;letter-spacing:-.03em;font-variation-settings:"opsz" 96}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 1.05rem/1 "Bricolage Grotesque",sans-serif;text-decoration:none;padding:16px 24px;border-radius:999px;min-height:54px;border:0;cursor:pointer;white-space:nowrap}
+.btn.ink{background:var(--ink);color:#fff}
+.btn.sun{background:var(--sun);color:var(--ink);box-shadow:inset 0 -4px 0 rgba(0,0,0,.15)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn i{font-size:1.25rem}
+/* header */
+header{padding:14px 0}
+.hd{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px}
+.logo{text-decoration:none;display:flex;align-items:baseline;gap:8px}
+.logo b{font:800 1.9rem/1 "Bricolage Grotesque";letter-spacing:-.05em;color:var(--leaf)}
+.logo small{font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+nav{display:flex;gap:24px;font-weight:600}
+nav a{text-decoration:none}nav a:hover{color:var(--leaf)}
+.hd .btn{padding:12px 18px;min-height:46px}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:48px;align-items:center;padding:28px 0 72px}
+.hero h1{font-size:clamp(3.2rem,7vw,6.4rem)}
+.hero h1 span{color:var(--leaf)}
+.hero p{font-size:1.25rem;max-width:30ch;margin:22px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+/* the gate */
+.scene{position:relative;aspect-ratio:5/4;border-radius:28px;overflow:hidden;background:linear-gradient(var(--sky) 0 58%,#C9BBA4 58% 100%);perspective:1400px;box-shadow:0 30px 60px -30px rgba(22,48,11,.45)}
+.scene::before{content:"";position:absolute;left:0;right:0;top:58%;bottom:0;background-image:radial-gradient(#A99A82 1.4px,transparent 1.6px),radial-gradient(#E0D4BF 1.2px,transparent 1.4px);background-size:14px 11px,9px 13px;background-position:0 0,5px 6px}
+.orb{position:absolute;right:14%;top:12%;width:70px;height:70px;border-radius:50%;background:var(--sun)}
+.house{position:absolute;left:50%;bottom:42%;transform:translateX(-50%);width:44%;text-align:center}
+.house strong{display:block;font:800 clamp(1.6rem,3.4vw,2.8rem)/1 "Bricolage Grotesque";letter-spacing:-.03em;color:var(--ink)}
+.house span{font-weight:600}
+.pier{position:absolute;bottom:14%;width:11%;height:62%;background:var(--brick);background-image:linear-gradient(rgba(255,255,255,.35) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.35) 2px,transparent 2px);background-size:100% 14px,50% 28px;z-index:3}
+.pier::before{content:"";position:absolute;left:-12%;right:-12%;top:-14px;height:16px;background:#D9D2C6;border-radius:3px}
+.pier.l{left:3%}.pier.r{right:3%}
+.leaves{position:absolute;left:14%;right:14%;bottom:16%;height:44%;display:flex;transform-style:preserve-3d;z-index:2}
+.leaf{flex:1;position:relative;transition:transform 1.6s cubic-bezier(.45,.05,.25,1);background:repeating-linear-gradient(90deg,var(--timber) 0 16px,var(--timber2) 16px 18px)}
+.leaf.l{transform-origin:left center;clip-path:polygon(0 22%,100% 0,100% 100%,0 100%)}
+.leaf.r{transform-origin:right center;clip-path:polygon(0 0,100% 22%,100% 100%,0 100%)}
+.leaf::before,.leaf::after{content:"";position:absolute;left:0;right:0;height:9%;background:#8A5426}
+.leaf::before{top:34%}.leaf::after{bottom:8%}
+.open .leaf.l{transform:rotateY(-78deg)}
+.open .leaf.r{transform:rotateY(78deg)}
+.fob{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);z-index:5;background:var(--ink);color:#fff;border-radius:22px 22px 0 0;padding:12px 16px 16px;display:flex;align-items:center;gap:12px}
+.led{width:10px;height:10px;border-radius:50%;background:#3E5A2C}
+.open .led{background:var(--sun);box-shadow:0 0 0 4px rgba(255,210,63,.25)}
+.press{width:62px;height:62px;border-radius:50%;border:0;background:var(--green);color:var(--ink);font:800 .78rem/1 "Bricolage Grotesque";cursor:pointer;box-shadow:inset 0 -5px 0 rgba(0,0,0,.2)}
+.press:active{transform:translateY(2px);box-shadow:inset 0 -2px 0 rgba(0,0,0,.2)}
+.press:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.fob small{font-weight:600;font-size:.85rem;max-width:12ch;line-height:1.2}
+/* band */
+.band{background:var(--green);color:var(--ink);padding:72px 0;border-radius:40px 40px 0 0}
+.band h2{font-size:clamp(2.4rem,5vw,4.2rem);max-width:15ch}
+.whys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
+.why{background:var(--paper);border-radius:28px;padding:26px 26px 28px}
+.why:nth-child(2){transform:translateY(28px)}
+.why i{font-size:2.2rem;color:var(--leaf)}
+.why h3{font-size:1.6rem;margin:12px 0 8px}
+.why p{margin:0}
+/* gallery */
+.pick{padding:88px 0 40px}
+.pick h2{font-size:clamp(2.2rem,4.4vw,3.6rem);max-width:16ch}
+.pick>.wrap>p{max-width:52ch;margin:14px 0 0}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,30%);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:32px 24px 24px;max-width:1240px;margin:0 auto;scrollbar-width:thin}
+.strip figure{margin:0;scroll-snap-align:start}
+.strip img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px}
+.strip figcaption{padding:12px 4px 0}
+.strip figcaption b{display:block;font-size:1.2rem}
+.tag{display:inline-block;font-weight:700;font-size:.8rem;background:var(--sky);border-radius:999px;padding:4px 10px;margin-bottom:6px}
+/* safety */
+.safe{background:var(--ink);color:#EAF4E2;padding:80px 0;margin-top:56px}
+.safe h2{font-size:clamp(2.2rem,4.6vw,3.8rem);max-width:17ch;color:#fff}
+.safe h2 span{color:var(--sun)}
+.safe .intro{max-width:56ch;margin:18px 0 40px;font-size:1.15rem}
+.hz{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.hz div{background:#21431A;border-radius:22px;padding:20px 22px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:start}
+.hz i{grid-row:span 2;font-size:1.9rem;color:var(--sun);background:rgba(255,210,63,.12);border-radius:50%;padding:10px}
+.hz b{font-size:1.2rem;color:#fff}
+.hz span{color:#BFD3B2;font-size:.97rem}
+.safe .after{margin:32px 0 0;font-size:1.1rem;max-width:60ch}
+/* more */
+.more{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding:96px 0}
+.more img{border-radius:28px;aspect-ratio:4/3;object-fit:cover;width:100%;background:#fff}
+.more h2{font-size:clamp(2rem,4vw,3.2rem);max-width:15ch;margin-bottom:22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:10px 16px;font-weight:700}
+.chips i{color:var(--leaf);font-size:1.2rem}
+/* quotes */
+.quotes{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;padding-bottom:96px;align-items:start}
+.bub{background:var(--sky);border-radius:32px 32px 32px 6px;padding:28px 30px;margin:0}
+.bub.two{background:var(--sun);border-radius:32px 32px 6px 32px;margin-top:64px}
+.bub p{margin:0 0 14px;font-size:1.25rem;line-height:1.4;font-weight:500}
+.bub figcaption{font-weight:700}
+.bub figcaption span{font-weight:400}
+/* contact */
+.contact{background:var(--green);border-radius:40px 40px 0 0;padding:72px 0 28px}
+.cgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:end}
+.contact h2{font-size:clamp(2.6rem,6vw,5rem);max-width:12ch}
+.contact .big{display:block;font:800 clamp(1.8rem,4vw,2.8rem)/1 "Bricolage Grotesque";letter-spacing:-.03em;text-decoration:none;margin:6px 0 4px}
+.contact p{margin:0 0 6px}
+.note{margin:48px 0 0;font-size:.85rem;border-top:2px solid rgba(22,48,11,.25);padding-top:16px}
+@media (prefers-reduced-motion:reduce){.leaf{transition:none}}
+@media (max-width:980px){
+ nav{display:none}
+ .hero{grid-template-columns:1fr;gap:32px;padding:16px 0 56px}
+ .whys{grid-template-columns:1fr}.why:nth-child(2){transform:none}
+ .hz{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .more,.quotes,.cgrid{grid-template-columns:1fr}
+ .bub.two{margin-top:0}
+ .strip{grid-auto-columns:minmax(240px,62%)}
+}
+@media (max-width:560px){
+ .wrap{padding:0 16px}
+ .hd .btn span{display:none}
+ .hero{padding:12px 16px 56px}
+ .hero p{font-size:1.1rem}
+ .logo small{display:inline;font-size:.6rem}
+ .scene{aspect-ratio:4/4.2;border-radius:22px}
+ .house{width:60%;bottom:44%}
+ .orb{width:46px;height:46px}
+ .fob small{display:none}
+ .band,.contact{border-radius:28px 28px 0 0;padding:56px 0}
+ .hz{grid-template-columns:1fr}
+ .strip{padding:24px 16px;grid-auto-columns:78%}
+ .pick{padding:64px 0 24px}.more{padding:64px 0}.quotes{padding-bottom:64px}
+ .bub{padding:22px}
+}
+</style>
+</head>
+<body>
+<div style="background:#17201B;color:#fff;font:500 14px/1.4 system-ui,sans-serif;padding:9px 20px;position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;z-index:2147483000"><span style="display:inline-flex;align-items:center;gap:8px"><svg style="height:12px;width:auto;color:#fff" viewBox="0 0 487.5 208.5" role="img" aria-label="Pete Owen Design logo"><path fill="currentColor" d="M487.5,10.6h-41.2v15.5c-15.3-10.6-33.9-16.8-53.8-16.8-30.1,0-57,14.1-74.4,36-17.4-21.9-44.3-36-74.4-36s-57,14.1-74.4,36c-17.4-21.9-44.3-36-74.4-36C44.8,9.4,3.8,48,0,96.9h-.3v100.3h41.2v-14.5c15.3,10.6,33.9,16.8,53.8,16.8,30.1,0,57-14.1,74.4-36,17.4,21.9,44.3,36,74.4,36s57-14.1,74.4-36c17.4,21.9,44.3,36,74.4,36,52.4,0,95.1-42.6,95.1-95.1s0-1.3,0-1.9h0V10.6h0ZM94.6,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM243.5,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM392.4,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8Z"/></svg> Design idea by Pete Owen Design. Not the live Platinum Automated Entries website.</span><a href="../index.html" style="color:#fff;font-weight:700">Back to the start</a></div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top" aria-label="Platinum Automated Entries, home"><b>platinum</b><small>Automated Entries</small></a>
+    <nav aria-label="Main"><a href="#gates">Gates</a><a href="#safe">Safety</a><a href="#more">Intercoms and automation</a><a href="#contact">Contact</a></nav>
+    <a class="btn ink" href="tel:01565777260"><i class="ph-bold ph-phone"></i><span>01565 777 260</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <h1>Press. Open. <span>Home.</span></h1>
+      <p>Made to measure gates that open for you, built and fitted by Platinum in Antrobus, Cheshire.</p>
+      <div class="cta">
+        <a class="btn sun" href="mailto:sales@automatedentries.co.uk?subject=Free%20site%20survey">Book a free survey</a>
+        <a class="btn line" href="#gates">See the gates</a>
+      </div>
+    </div>
+    <div class="scene" id="scene" aria-label="A drawing of a pair of timber gates between brick piers. Press the button to open and close them.">
+      <div class="orb"></div>
+      <div class="house"><strong>Welcome home.</strong><span>No getting out of the car.</span></div>
+      <div class="pier l"></div><div class="pier r"></div>
+      <div class="leaves"><div class="leaf l"></div><div class="leaf r"></div></div>
+      <div class="fob"><span class="led" aria-hidden="true"></span><button class="press" id="press" aria-pressed="false">Open</button><small>Go on, press it.</small></div>
+    </div>
+  </div>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>The gate opens. You stay dry.</h2>
+      <div class="whys">
+        <div class="why"><i class="ph-bold ph-cloud-rain"></i><h3>Rain</h3><p>One press from the car, and the gate is open before you reach it.</p></div>
+        <div class="why"><i class="ph-bold ph-ruler"></i><h3>Made to measure</h3><p>Every gate is built in a size and design to suit your drive, in timber or wrought iron.</p></div>
+        <div class="why"><i class="ph-bold ph-shield-check"></i><h3>Safe as houses</h3><p>Safety devices come as standard, never as an optional extra.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pick" id="gates">
+    <div class="wrap">
+      <h2>Pick a gate. We'll make it fit.</h2>
+      <p>A few from our own gallery. Swipe for more.</p>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Gates we have made and fitted">
+      <figure><img src="img/images-W002b.jpg" alt="Hardwood swing gates with an arched top and diagonal braces" loading="lazy"><figcaption><span class="tag">Timber</span><b>Arched and braced</b></figcaption></figure>
+      <figure><img src="img/images-S005.jpg" alt="Black wrought iron gates with a scrolled arch, in front of a bungalow" loading="lazy"><figcaption><span class="tag">Wrought iron</span><b>Scrolls and spears</b></figcaption></figure>
+      <figure><img src="img/images-W015.jpg" alt="Wide timber gates with decorative cut-out panels and spindles" loading="lazy"><figcaption><span class="tag">Timber</span><b>Open and decorative</b></figcaption></figure>
+      <figure><img src="img/images-W022.jpg" alt="Modern dark grey slatted gates between brick piers" loading="lazy"><figcaption><span class="tag">Timber</span><b>Modern slatted</b></figcaption></figure>
+      <figure><img src="img/images-S012.jpg" alt="Iron gates with railings and stone piers on a long drive" loading="lazy"><figcaption><span class="tag">Wrought iron</span><b>Country estate</b></figcaption></figure>
+      <figure><img src="img/images-C011.jpg" alt="A long galvanised commercial gate across a site entrance" loading="lazy"><figcaption><span class="tag">Commercial</span><b>Heavy duty</b></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="safe" id="safe">
+    <div class="wrap">
+      <h2>"It'll be alright, what could possibly happen?" <span>Quite a lot, actually.</span></h2>
+      <p class="intro">A gate that moves on its own is a machine, so every Platinum job starts with a safety survey. We look for six things before we fit anything.</p>
+      <div class="hz">
+        <div><i class="ph-bold ph-car-profile"></i><b>Collision</b><span>The gate meeting a person, car or pet.</span></div>
+        <div><i class="ph-bold ph-t-shirt"></i><b>Conveyor</b><span>A sleeve caught and carried along.</span></div>
+        <div><i class="ph-bold ph-hand-palm"></i><b>Crushing</b><span>Between the leaves, at the hinges, underfoot.</span></div>
+        <div><i class="ph-bold ph-person-simple-walk"></i><b>Pushing</b><span>Someone knocked over by the gate.</span></div>
+        <div><i class="ph-bold ph-scissors"></i><b>Shearing</b><span>An arm through the bars of a sliding gate.</span></div>
+        <div><i class="ph-bold ph-lock-simple"></i><b>Trapping</b><span>No way out behind an open gate.</span></div>
+      </div>
+      <p class="after">Got older gates? Most fitted before the regulations had no safety devices at all. We can usually upgrade them to work with what you already have.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="more" id="more">
+      <img src="img/images-W014.jpg" alt="The inside of a timber gate with its automation arm and control box fitted" loading="lazy">
+      <div>
+        <h2>The clever bits.</h2>
+        <div class="chips">
+          <span><i class="ph-bold ph-gear"></i>Gate automation</span>
+          <span><i class="ph-bold ph-garage"></i>Garage doors</span>
+          <span><i class="ph-bold ph-phone-call"></i>Intercoms</span>
+          <span><i class="ph-bold ph-broadcast"></i>Remote fobs</span>
+          <span><i class="ph-bold ph-warning-circle"></i>Safety edges</span>
+          <span><i class="ph-bold ph-buildings"></i>Commercial barriers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes" aria-label="What customers say">
+      <figure class="bub">
+        <p>"In this day and age it's hard to find a company who care so passionately about their craftsmanship."</p>
+        <figcaption>Mr and Mrs Scott-Davies <span>Clotton, Cheshire</span></figcaption>
+      </figure>
+      <figure class="bub two">
+        <p>"The new gates have changed the appearance of our home."</p>
+        <figcaption>Mr and Mrs Levenson <span>Hargrave, Cheshire</span></figcaption>
+      </figure>
+    </section>
+  </div>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="cgrid">
+      <h2>Fancy a new gate? Give us a buzz.</h2>
+      <div>
+        <a class="big" href="tel:01565777260">01565 777 260</a>
+        <p>Monday to Saturday, 8am to 6pm. Free survey and quote.</p>
+        <p>Mobile <a href="tel:07816909045">07816 909045</a> (Dave) or <a href="mailto:sales@automatedentries.co.uk">sales@automatedentries.co.uk</a></p>
+        <p>Platinum Workshop, Brow Lane, Antrobus, Northwich CW9 6JY</p>
+      </div>
+    </div>
+    <p class="note">Direction B, Open Sesame. Concept by Pete Owen Design, not the live Platinum Automated Entries website. Services, phone numbers, hours, address, the six safety hazards and both testimonials come from the current website (testimonials are shortened; the line about what could possibly happen paraphrases their Safety page). Headlines, photo titles and the short descriptions are proposed copy. Photos are Platinum's own, from its website gallery. The gate drawing is a placeholder made for this concept.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var s=document.getElementById('scene'),b=document.getElementById('press');
+  function set(o){s.classList.toggle('open',o);b.textContent=o?'Close':'Open';b.setAttribute('aria-pressed',o)}
+  b.addEventListener('click',function(){set(!s.classList.contains('open'))});
+  var calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(calm){set(true)}else{setTimeout(function(){set(true)},900)}
+})();
+</script>
+</body>
+</html>
